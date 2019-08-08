@@ -4,11 +4,20 @@
    * Colour palette
    */
   --c-primary: hsl(190, 100%, 40%);
+  --c-white: #ffffff;
+  --c-grey: #707070;
+  --c-pink: #FCF2F2;
+  --c-purple: #BFACE5;
+  --c-blue: #E8F9FD;
+  --c-lgblue: #78A5B3;
 
   /**
    * Layout
    */
   --l-gutter: 1rem;
+  --d-between: 7.25rem;
+  --d-spacing: 2rem;
+  --d-bubbleend: 2.5625rem;
 
   /**
    * Typography
@@ -16,6 +25,7 @@
   --t-primary: Arial, Helvetica, sans-serif;
   --t-secondary: Arial, Helvetica, sans-serif;
   --t-tertiary: monospace;
+
 
   --t-headline: var(--t-primary);
   --t-subtitle: var(--t-primary);

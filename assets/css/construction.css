@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200i,400&display=swap');
+
+@import url('variables.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Muli:300i", sans-serif;
+    height: inherit;
+    margin: 0;
+}
+
+
+header {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background-image: url("../images/under-construction.jpg");
+    background-size: 100vw;
+}
+
+header>img {
+    margin-top: -5rem;
+    height: 21.375rem;
+}
+
+
+h1 {
+    visibility: hidden;
+    font-size: 0;
+}
+
+form {
+    display: inline-block;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    background-color: var(--c-white);
+    width: 100vw;
+    text-decoration: none;
+    overflow: hidden;
+    height: 5.313rem;
+    justify-content: center;
+}
+
+nav>ul>li {
+    display: inline;
+    color: var(--c-grey);
+    text-transform: uppercase;
+    margin-left: var(--d-spacing);
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: var(--c-grey);
+}
+
+h2 {
+    font-family: 'Muli', sans-serif;
+    font-style: italic;
+    color: var(--c-grey);
+    border-bottom: 1px var(--c-grey) solid;
+    font-size: 4.1875rem;
+    text-align: center;
+}
+
+h3 {
+    color: var(--c-lgblue);
+}
+
+h4 {
+    color: var(--c-lgblue);
+}
+
+p {
+    color: var(--c-grey);
+    font-family: 'Muli', sans-serif;
+    font-size: 1.25rem;
+}
+
+.sticker {
+    display: flex;
+    align-items: center;
+}
+
+.bubbleOne>h3 {
+    color: var(--c-lgblue);
+}
+
+.open {
+    color: var(--c-lgblue);
+    text-decoration: underline var(--c-grey);
+    ;
+}
+
+.navfirst {
+    margin-left: 5.8125rem;
+}
+
+.bubbleOne>.nieuws {
+    grid-area: nws;
+}
+
+.down {
+    display: flex;
+    justify-content: center;
+    margin-top: -116px;
+}
+
+main>.start {
+    margin-top: var(--d-between);
+}
+
+.baseright {
+    border-radius: 0 3.125rem 3.125rem 0;
+    background: var(--c-pink);
+    margin-right: 25.5rem;
+    opacity: 0.75;
+}
+
+.baseright>h2 {
+    padding-left: 33rem;
+    text-align: right;
+}
+
+.baseleft {
+    border-radius: 3.125rem 0 0 3.125rem;
+    background-color: var(--c-blue);
+    margin-left: 25.5rem;
+    opacity: 0.75;
+}
+
+.baseleft>h2 {
+    text-align: left;
+}
+
+.bubbleOne {
+    display: grid;
+    grid-gap: 1.25rem;
+    grid-auto-columns: 1fr 3fr;
+    grid-template-areas: "nws nws ."
+        ". text ."
+        ". text ."
+        ". text ."
+        "img text ."
+        ". text ."
+        ". text ."
+        ". text .";
+}
+
+.bubbleOne>img {
+    width: 15.75rem;
+    height: 10.5rem;
+    padding-left: 9.0625rem;
+    grid-area: img;
+}
+
+.bubbleOne>.info {
+    margin-top: 3.5rem;
+    margin-left: 11.5rem;
+    grid-area: text;
+    margin-bottom: var(--d-bubbleend);
+}
+
+.bubbleTwo {
+    margin-top: var(--d-between);
+
+    display: grid;
+    padding-right: 50%;
+    grid-template-areas: ". title title"
+        "paw theme img"
+        ". theme img";
+}
+
+.paw {
+    margin-top: var(--d-spacing);
+    grid-area: paw;
+}
+
+.bubbleTwo>p {
+    text-align: right;
+    width: 29.75rem;
+}
+
+.bubbleTwo>.dog {
+    margin-top: var(--d-spacing);
+    margin-bottom: var(--d-spacing);
+    background-color: #FFDEE7;
+    width: 21.875rem;
+    height: 15.125rem;
+    padding: var(--d-spacing) 3.1875rem var(--d-spacing) 3.1875rem;
+    border-radius: 3.125rem;
+    margin-left: 5rem;
+    margin-right: 17rem;
+    grid-area: img;
+}
+
+.bubbleTwo>.yeartheme {
+    grid-area: title;
+    text-align: left;
+}
+
+.theme {
+    margin-top: var(--d-spacing);
+    grid-area: theme;
+}
+
+.bubbleThree {
+    margin-top: var(--d-between);
+    margin-bottom: var(--d-between);
+    display: grid;
+    grid-template-areas: "who who who"
+        "question team ."
+        "question explanation explanation"
+        "question . ."
+        "question . img"
+}
+
+.bubbleThree>.teachers {
+    width: 33.75rem;
+    height: 25.875rem;
+    grid-area: img;
+    margin-left: -28rem;
+    margin-bottom: var(--d-bubbleend);
+}
+
+.bubbleThree>.explanation {
+    grid-area: explanation;
+    width: 30.025rem;
+    margin-left: -2rem;
+    margin-top: 1.6875rem;
+}
+
+.bubbleThree>.who {
+    grid-area: who;
+    margin-right: 22.5625rem;
+    margin-bottom: 2.875rem;
+}
+
+.bubbleThree>.question {
+    grid-area: question;
+    margin-bottom: var(--d-bubbleend);
+    margin-left: 7.125rem;
+}
+
+.bubbleThree>.team {
+    margin-left: -2rem;
+    grid-area: team;
+    font-size: 2.2475rem;
+}
+
+.bubbleFour {
+    margin-top: var(--d-between);
+    margin-bottom: var(--d-between);
+}
+
+
+.contactone {
+    margin-top: var(--d-spacing);
+    margin-left: -8.4375rem;
+    ;
+    display: grid;
+    grid-template-areas: ". titleuno"
+        "unoimg textuno"
+        ". textuno";
+}
+
+.contacttwo {
+    margin-top: var(--d-spacing);
+    margin-left: -9.4375rem;
+    display: grid;
+    grid-template-areas: ". titledos"
+        "dosimg textdos"
+        ". textdos"
+}
+
+.contactone>.tpimg {
+    margin-top: var(--d-spacing);
+    grid-area: unoimg;
+    margin-left: 10.6875rem;
+}
+
+.contacttwo>.bttmimg {
+    margin-top: var(--d-spacing);
+    grid-area: dosimg;
+    margin-left: 11.6875rem;
+}
+
+.bubbleFour>.textone {
+    grid-area: txtuno;
+}
+
+.bubbleFour>.texttwo {
+    grid-area: txtdos;
+}
+
+.contactone>h3 {
+    font-size: 2.2475rem;
+    grid-area: titleuno;
+    align-self: flex-end;
+}
+
+.contacttwo>h3 {
+    font-size: 2.2475rem;
+    grid-area: titledos;
+    align-self: flex-end;
+}
+
+.grey {
+    color: var(--c-grey);
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    margin-top: -3.4375rem;
+    margin-bottom: 3.4375rem;
+}

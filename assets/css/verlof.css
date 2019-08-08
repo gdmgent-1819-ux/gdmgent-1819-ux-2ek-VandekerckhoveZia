@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200i,400&display=swap');
+
+@import url('variables.css');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Muli:300i", sans-serif;
+  height: inherit;
+  margin: 0;
+}
+
+.background {
+  background-image: url("../images/background-bollen.svg");
+  background-repeat: no-repeat;
+}
+
+header {
+  display: grid;
+  justify-content: center; 
+  align-content: center;
+  height: 100vh;
+  background-image: url("../images/verlofperiodes.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  grid-template-areas: "arrw"
+}
+
+header> .logo {
+  margin-top: -5rem;
+  height: 21.375rem;
+}
+
+
+h1 {
+  visibility: hidden;
+  font-size: 0;
+}
+
+form {
+    display: inline-block;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  background-color: var(--c-white);
+  width: 100vw;
+  text-decoration: none;
+  overflow: hidden;
+  height: 5.313rem;
+  justify-content: center;
+}
+
+nav>ul>li {
+  display: inline;
+  color: var(--c-grey);
+  text-transform: uppercase;
+  margin-left: var(--d-spacing);
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: var(--c-grey);
+}
+
+h2 {
+  font-family: 'Muli', sans-serif;
+  font-style: italic;
+  color: var(--c-grey);
+  border-bottom: 1px var(--c-grey) solid;
+  font-size: 4.1875rem;
+  text-align: center;
+}
+
+h3 {
+  color: var(--c-lgblue);
+}
+
+h4 {
+  color: var(--c-lgblue);
+}
+
+p {
+  color: var(--c-grey);
+  font-family: 'Muli', sans-serif;
+  font-size: 1.25rem;
+}
+
+.sticker {
+  display: flex;
+  align-items: center;
+}
+
+.open {
+  color: var(--c-lgblue);
+  text-decoration: underline var(--c-grey);;
+}
+
+.navfirst {
+  margin-left: 5.8125rem;
+}
+
+
+.start {
+  margin-top: var(--d-between);
+}
+
+.baseright {
+  border-radius: 0 3.125rem 3.125rem 0;
+  background-color: var(--c-pink);
+  margin-right: 25.5rem;
+  opacity: 0.75;
+}
+
+.baseright>h2 {
+  text-align: right;
+  margin-right: 5rem;
+}
+
+.baseleft {
+  border-radius: 3.125rem 0 0 3.125rem;
+  background-color: var(--c-pink);
+  margin-left: 25.5rem;
+  opacity: 0.75;
+}
+
+.baseleft>h2 {
+  text-align: left;
+}
+
+.grey {
+  color: var(--c-grey);
+}
+
+.end {
+  display:flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+  padding-bottom: 3.4375rem;
+}
+
+.bubbleOne{
+    margin-bottom: 3.5rem;
+}
+
+.vakanties {
+    display: grid;
+    grid-template-areas: "image times now next future";
+    margin-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.tijden {
+    grid-area: times;
+}
+
+.dit {
+    grid-area: now;
+}
+
+.volgende {
+    grid-area: next;
+}
+
+.toekomst {
+    grid-area: future;
+}
+
+.kalender {
+    grid-area: image;
+    margin-left: 12.5rem;
+    margin-right: 5rem;
+}
