@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: "Muli:300i", sans-serif;
+  font-family: "Muli:200i", sans-serif;
   height: inherit;
   margin: 0;
 }
@@ -106,7 +106,7 @@ p {
 }
 
 .navfirst {
-  margin-left: 5.8125rem;
+  margin-left: -1rem;
 }
 
 

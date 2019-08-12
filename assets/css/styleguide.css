@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200i,400&display=swap');
+
 .sg-title {
     font-size: 1.7rem;
     font-weight: 400;
     color: #333;
     margin: 1rem 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .sg-subtitle {
@@ -13,5 +15,337 @@
     color: #666;
     text-transform: uppercase;
     margin: 2rem 0 .5rem 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+.h2vb {
+    font-family: 'Muli', sans-serif;
+    font-style: italic;
+    color: var(--c-grey);
+    border-bottom: 1px var(--c-grey) solid;
+    font-size: 4.1875rem;
+    text-align: center;
+}
+
+.h3vb {
+    color: var(--c-lgblue);
+}
+
+.pvb {
+    color: var(--c-grey);
+    font-family: 'Muli', sans-serif;
+    font-size: 1.25rem;
+}
+
+.clr1 {
+    width: 10rem;
+    height: 5rem;
+    grid-area: c1;
+    background-color: #FCF2F2;
+    opacity: 0.75;
+}
+
+.clr2 {
+    width: 10rem;
+    height: 5rem;
+    grid-area: c2;
+    background-color: #707070;
+}
+
+.clr2 > p {
+    color: #ffffff;
+}
+
+.clr3 {
+    width: 10rem;
+    height: 5rem;
+    grid-area: c3;
+    background-color: #78A5B3;
+    opacity: 0.5;
+}
+
+.clr3 > p {
+    color: #000000;
+}
+
+.clr4 {
+    width: 10rem;
+    height: 5rem;
+    grid-area: c4;
+    background-color: #CAF2FC;
+    opacity: 0.5;
+}
+
+.clr5 {
+    width: 10rem;
+    height: 5rem;
+    grid-area: c5;
+    background-color: #D5F7E8;
+    opacity: 0.5;
+}
+
+.clr6 {
+    width: 10rem;
+    height: 5rem;
+    grid-area: c6;
+    background-color: #50407E;
+}
+
+.clr7 {
+    width: 10rem;
+    height: 5rem;
+    grid-area: c7;
+    background-color: #000000;
+}
+
+.clr7 > p {
+    color: #ffffff;
+}
+
+.clr8 {
+    width: 10rem;
+    height: 5rem;
+    grid-area: c8;
+    background-color: #FFDEE7;
+}
+
+.coloring {
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+    grid-column: 1fr 1fr 1fr;
+    grid-template-areas: "c1 c2 c3"
+        "c4 c5 c6"
+        "c7 c8 c9"
+}
+
+.sv1 {
+
+    grid-area: sv1;
+}
+
+.sv2 {
+
+    grid-area: sv2;
+}
+
+.sv3 {
+
+    grid-area: sv3;
+}
+
+.sv4 {
+
+    grid-area: sv4;
+}
+
+.sv5 {
+
+    grid-area: sv5;
+}
+
+.sv6 {
+
+    grid-area: sv6;
+}
+
+.sv7 {
+
+    grid-area: sv7;
+}
+
+.sv8 {
+
+    grid-area: sv8;
+}
+
+.sv9 {
+
+    grid-area: sv9;
+}
+
+.sv10 {
+
+    grid-area: sv10;
+}
+
+.sv11 {
+
+    grid-area: sv11;
+}
+
+.sv12 {
+
+    grid-area: sv12;
+}
+
+.sv13 {
+
+    grid-area: sv13;
+}
+
+.sv14 {
+
+    grid-area: sv14;
+}
+
+.sv15 {
+
+    grid-area: sv15;
+}
+
+.sv16 {
+
+    grid-area: sv16;
+}
+
+.sv17 {
+
+    grid-area: sv17;
+}
+
+.sv18 {
+    grid-area: sv18;
+}
+
+.sv19 {
+    grid-area: sv19;
+}
+
+.sv20 {
+    grid-area: sv20;
+}
+
+.svgs>div>img {
+    width: 20rem;
+    height: 20rem;
+}
+
+.svgs {
+    display: grid;
+    grid-row: 1fr 1fr 1fr 1fr;
+    grid-column: repeat(5, 1fr);
+    grid-template-areas: "sv1 sv2 sv3 sv4"
+        "sv5 sv6 sv7 sv8"
+        "sv9 sv10 sv11 sv12"
+        "sv13 sv14 sv15 sv16"
+        "sv17 sv18 sv19 sv20"
+}
+
+.png1 {
+    grid-area: png1;
+}
+
+.png2 {
+    grid-area: png2;
+}
+
+.png3 {
+    grid-area: png3;
+}
+
+.png4 {
+    grid-area: png4;
+}
+
+.png5{
+    grid-area: png5;
+}
+
+.png6 {
+    grid-area: png6;
+}
+
+.png7 {
+    grid-area: png7;
+}
+
+.png8 {
+    grid-area: png8;
+}
+
+.png9 {
+    grid-area: png9;
+}
+
+.png10 {
+    grid-area: png10;
+}
+
+.png11 {
+    grid-area: png11;
+}
+
+.png12 {
+    grid-area: png12;
+}
+
+.png13 {
+    grid-area: png13;
+}
+
+.png14 {
+    grid-area: png14;
+}
+
+.pngs>div>img {
+    width: 20rem;
+    height: 20rem;
+}
+
+.pngs {
+    display: grid;
+    grid-row: repeat(4, 1fr);
+    grid-column: repeat(4, 1fr);
+    grid-template-areas: "png1 png3 png2 png4"
+     "png5 png6 png7 png8"
+     "png9 png10 png11 png12"
+}
+
+.jpg1 {
+    grid-area: jpg1;
+}
+
+.jpgs > div > img {
+    width: 20rem;
+    height: 20rem;
+}
+
+.jpgs {
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+    grid-column: 1fr;
+    grid-template-areas: "none jpg1 none"
+}
+
+#vragen {
+    width: 44.75rem;
+    height: 19.5rem;
+    box-sizing: border-box;
+    margin-top: 3.5rem;
+    grid-area: question;
+    border: 0.3125rem solid #FDF5F5;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+}
+
+#vragen:disabled {
+    background-color: #fff;
+}
+
+#sending {
+    background-image: url("../images/paper-plane-solid.svg");
+    background-repeat: no-repeat;
+    background-position: center right 1rem;
+    background-size: 1.625rem 1.625rem;
+    margin-right: 5rem;
+    margin-bottom: -1.3125rem;
+    margin-top: -4rem;
+    height: 2.625rem;
+    width: 44.75rem;
+    box-sizing: border-box;
+    grid-area: send;
+    border: 0.3125rem solid #E9FAF3;
+    border-radius: 1rem;
+    font-family: "Muli", sans-serif;
 }

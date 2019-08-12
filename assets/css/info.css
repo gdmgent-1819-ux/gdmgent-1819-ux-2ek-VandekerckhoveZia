@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200i,400&display=swap');
+
+@import url('variables.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Muli:200i", sans-serif;
+    margin: 0;
+}
+
+.background {
+    background-image: url("../images/background-bollen.svg");
+    background-repeat: no-repeat;
+}
+
+header {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background-image: url("../images/schoolinfo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header>.logo {
+    margin-top: -5rem;
+    height: 21.375rem;
+}
+
+
+h1 {
+    visibility: hidden;
+    font-size: 0;
+}
+
+form {
+    display: inline-block;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    background-color: var(--c-white);
+    width: 100vw;
+    text-decoration: none;
+    overflow: hidden;
+    height: 5.313rem;
+    justify-content: center;
+}
+
+nav>ul>li {
+    display: inline;
+    color: var(--c-grey);
+    text-transform: uppercase;
+    margin-left: var(--d-spacing);
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: var(--c-grey);
+}
+
+h2 {
+    font-family: 'Muli', sans-serif;
+    font-style: italic;
+    color: var(--c-grey);
+    border-bottom: 1px var(--c-grey) solid;
+    font-size: 4.1875rem;
+    text-align: center;
+}
+
+h3 {
+    color: var(--c-lgblue);
+}
+
+h4 {
+    color: var(--c-lgblue);
+}
+
+p {
+    color: var(--c-grey);
+    font-family: 'Muli', sans-serif;
+    font-size: 1.25rem;
+}
+
+.sticker {
+    display: flex;
+    align-items: center;
+}
+
+.open {
+    color: var(--c-lgblue);
+    text-decoration: underline var(--c-grey);
+    ;
+}
+
+.navfirst {
+    margin-left: -1rem;
+}
+
+
+.start {
+    margin-top: var(--d-between);
+}
+
+.baseright {
+    border-radius: 0 3.125rem 3.125rem 0;
+    background: #F2FBFD;
+    margin-right: 25.5rem;
+    opacity: 0.75;
+}
+
+.baseright>h2 {
+    padding-left: 33rem;
+}
+
+.baseleft {
+    border-radius: 3.125rem 0 0 3.125rem;
+    background-color: var(--c-pink);
+    margin-left: 25.5rem;
+    opacity: 0.75;
+}
+
+.baseleft>h2 {
+    text-align: left;
+}
+
+.idea {
+    margin-left: 3rem;
+    grid-area: idea;
+    width: 44.75rem;
+}
+
+.grey {
+    color: var(--c-grey);
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    padding-bottom: 3.4375rem;
+}
+
+.HSL {
+    grid-area: hlager;
+    text-align: center;
+}
+
+.HSLimg {
+    grid-area: hlimg;
+    width: 28.25rem;
+    justify-self: center;
+}
+
+.HSK {
+    grid-area: hkleuter;
+    text-align: center;
+}
+
+.HSKimg {
+    grid-area: hkimg;
+    width: 28.25rem;
+    justify-self: center;
+}
+
+.WS1 {
+    grid-area: wkl1;
+    text-align: center;
+}
+
+.WS2 {
+    grid-area: wkl2;
+    text-align: center;
+}
+
+.WS1img {
+    grid-area: wkl1img;
+    width: 28.25rem;
+    justify-self: center;
+}
+
+.WS2img {
+    grid-area: wkl2img;
+    width: 28.25rem;
+    justify-self: center;
+}
+
+.HS {
+    text-align: center;
+    grid-area: hsl;
+}
+
+.WS {
+    text-align: center;
+    grid-area: ws;
+}
+
+.topbbone {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    display: grid;
+    grid-gap: 1.25rem;
+    grid-template-areas: "hlager hkleuter"
+        "hlimg hkimg";
+    grid-area: tp;
+}
+
+.btmbbone {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    display: grid;
+    grid-gap: 1.25rem;
+    grid-column: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    grid-template-areas: "wkl1 wkl2"
+        "wkl1img wkl2img";
+    grid-area: btm;
+}
+
+.bbonemain {
+    margin-top: 3.5rem;
+    display: grid;
+    grid-gap: 0;
+    grid-template-areas: "hsl"
+        "tp"
+        "ws"
+        "btm";
+    grid-area: text;
+}
+
+.bubbleOne > .sitemap {
+    display: grid;
+    grid-area: map;
+}
+
+.bubbleOne>.structuur {
+    width: 55rem;
+    grid-area: struct;
+}
+
+.bubbleOne {
+    display: grid;
+    width: 94.5rem;
+    padding-left: 5.25rem;
+    grid-template-areas: "struct struct "
+        ". text"
+        "map text"
+        ". text";
+    margin-bottom: 7rem;
+}
+
+.lessen {
+    width: 22rem;
+    margin-top: 2.688rem;
+    text-align: right;
+    grid-area: cls;
+}
+
+.verloop {
+    width: 22rem;
+    margin-top: 2.688rem;
+    text-align: right;
+    grid-area: vrlp;
+}
+
+.opvang {
+    width: 22rem;
+    margin-top: 2.688rem;
+    text-align: right;
+    grid-area: ctch;
+}
+
+.imgclass {
+    margin-top: 3.75rem;
+    margin-right: 14.25rem;
+    grid-area: imgcls;
+}
+
+.imgverloop {
+    align-self: center;
+    margin-top: 5rem;
+    margin-left: 8.75rem;
+    grid-area: imgvrlp;
+}
+
+.imgschool {
+    margin-top: 3.75rem;
+    margin-right: 14.25rem;
+    grid-area: imgctch;
+}
+
+.title2 {
+    grid-area: titel;
+    padding-left: 5rem;
+}
+
+.bubbleTwo {
+    display: grid;
+    grid-template-areas: ". titel titel"
+        ". cls imgcls"
+        "imgvrlp vrlp ."
+        ". ctch imgctch";
+    padding-bottom: 3.75rem;
+    margin-bottom: 7rem;
+}
+
+.kinderen {
+    grid-area: kids;
+    width: 10.25rem
+}
+
+.starten {
+    grid-area: expl;
+    width: 24rem
+}
+
+.vanaf {
+    grid-area: frm;
+    width: 10.25rem
+}
+
+.info {
+    display: grid;
+    width: 40.75rem;
+    grid-template-areas: "kids expl frm";
+    grid-area: info;
+}
+
+.uitleg {
+    width: 40.75rem;
+    grid-area: uitleg;
+}
+
+.rest {
+    grid-area: rst;
+    width: 40.75rem;
+}
+
+.book {
+    grid-area: insch;
+    margin-left: 15rem;
+}
+
+.titlethree {
+    grid-area: title3;
+    width: 53.75rem;
+}
+
+.baseleft > .titlethree {
+    margin-left: -45rem;
+    padding-left: 0;
+}
+
+.bubbleThree {
+    display: grid;
+    grid-template-areas: "title3 ."
+        ". rst "
+        ". info "
+        "insch info"
+        ". info "
+        ". uitleg";
+    margin-bottom: 3.5rem;
+}
