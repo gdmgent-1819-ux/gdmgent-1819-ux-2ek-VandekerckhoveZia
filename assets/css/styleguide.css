@@ -232,6 +232,11 @@
         "sv17 sv18 sv19 sv20"
 }
 
+.pngs>div>img {
+    width: 20rem;
+    height: 20rem;
+}
+
 .png1 {
     grid-area: png1;
 }
@@ -288,20 +293,85 @@
     grid-area: png14;
 }
 
-.pngs>div>img {
-    width: 20rem;
-    height: 20rem;
+.png15 {
+    grid-area: png15;
+}
+
+.png16 {
+    grid-area: png16;
+}
+
+.png17 {
+    grid-area: png17;
+}
+
+.png18 {
+    grid-area: png18;
+}
+
+.png19 {
+    grid-area: png19;
+}
+
+.png20 {
+    grid-area: png20;
+}
+
+.pngs>.png12 > img {
+    width: 13rem;
+    height:  2.063rem;
+}
+
+.pngs>.png13 > img {
+    width: 13rem;
+    height:  2.063rem;
+}
+
+.pngs>.png14 > img {
+    width: 13rem;
+    height:  2.063rem;
+}
+
+.pngs>.png15 > img {
+    width: 13rem;
+    height:  2.063rem;
+}
+
+.pngs>.png16 > img {
+    width: 13rem;
+    height:  2.063rem;
+}
+
+.pngs>.png17 > img {
+    width: 13rem;
+    height:  2.063rem;
+}
+
+.pngs>.png18 > img {
+    width: 13rem;
+    height:  2.063rem;
+}
+
+.pngs>.png19 > img {
+    width: 13rem;
+    height:  2.063rem;
+}
+
+.pngs>.png20 > img {
+    width: 13rem;
+    height:  2.063rem;
 }
 
 .pngs {
     display: grid;
-    grid-row: repeat(4, 1fr);
+    grid-row: repeat(5, 1fr);
     grid-column: repeat(4, 1fr);
     grid-template-areas: "png1 png3 png2 png4"
      "png5 png6 png7 png8"
      "png9 png10 png11 png12"
+     "png13 png14 png15 png16"
+     "png17 png18 png19 png20"
 }
-
 .jpg1 {
     grid-area: jpg1;
 }

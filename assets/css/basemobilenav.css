@@ -35,8 +35,57 @@
     font-size: 0;
   }
 
+  .homez {
+    grid-area: homez;
+  }
+
+  .schoolz {
+    grid-area: schoolz;
+  }
+
+  .verlofz {
+    grid-area: verlofz;
+  }
+
+  .ouderz {
+    grid-area: ouderz;
+  }
+
+  .olkz {
+    grid-area: olkz;
+  }
+
+  .actz {
+    grid-area: actz;
+  }
+
+  .wmz {
+    grid-area: wmz;
+  }
+
+  .mosz {
+    grid-area: mosz;
+    
+  }
+
+  .mobilenav > a > img {
+    width: 12.94rem;
+  }
+
   .mobilenav {
-    display: none;
+    display: grid;
+    grid-template-areas: "homez"
+      "schoolz"
+      "verlofz"
+      "ouderz"
+      "fotoz"
+      "olkz"
+      "actz"
+      "wmz"
+      "mosz";
+      position: fixed;
+      top: 2px;
+      left: 2px;
   }
 
   .down {
@@ -103,11 +152,8 @@
     margin-bottom: 3.125rem;
   }
 
-  .navimg {
-    position: fixed;
-    top: 2px;
-    left: 2px;
-
+  header>.navimg {
+    display: none;
   }
 
   .paw {
